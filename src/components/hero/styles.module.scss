@@ -1,0 +1,165 @@
+@import "../../variables";
+
+$offset-left: 200px;
+
+$border1: 16px;
+$border2: 26px;
+
+.container {
+  position: relative;
+  margin-top: 110px;
+  margin-left: $offset-left;
+}
+
+.dash {
+  position: absolute;
+  left: -$offset-left;
+  top: 50%;
+  width: 100vw;
+  border-top: 1px dashed $blue;
+}
+
+.outer {
+  position: relative;
+  width: 901px;
+  padding: 70px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  background-color: $gray900;
+
+  // border
+  background-image: repeating-linear-gradient(
+      0deg,
+      $purple,
+      $purple $border1,
+      transparent $border1,
+      transparent $border2,
+      $purple $border2
+    ),
+    repeating-linear-gradient(90deg, $purple, $purple $border1, transparent $border1, transparent $border2, $purple $border2),
+    repeating-linear-gradient(180deg, $purple, $purple $border1, transparent $border1, transparent $border2, $purple $border2),
+    repeating-linear-gradient(270deg, $purple, $purple $border1, transparent $border1, transparent $border2, $purple $border2);
+  background-size: 2px 100%, 100% 2px, 2px 100%, 100% 2px;
+  background-position: 0 0, 0 0, 100% 0, 0 100%;
+  background-repeat: no-repeat;
+
+  .diamond {
+    position: absolute;
+    top: -30px;
+    left: 0;
+  }
+}
+
+.box {
+  position: relative;
+  padding: 95px 50px 70px;
+  border: 2px solid #505050;
+
+  .header {
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 125%;
+    color: $gray200;
+  }
+
+  .message {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: $gray100;
+  }
+
+  .corners {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    box-sizing: border-box;
+    border: 2px solid $blue;
+    background-color: $gray900;
+
+    &:nth-child(1) {
+      top: -13px;
+      left: -13px;
+    }
+
+    &:nth-child(2) {
+      top: -13px;
+      right: -13px;
+    }
+
+    &:nth-child(3) {
+      bottom: -13px;
+      left: -13px;
+    }
+
+    &:nth-child(4) {
+      bottom: -13px;
+      right: -13px;
+    }
+  }
+
+  .circles {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    padding-bottom: 2px;
+    box-sizing: border-box;
+    border: 2px solid $blue;
+    background-color: $gray900;
+    border-radius: 50%;
+    color: $blue;
+
+    &:nth-child(1) {
+      top: -13px;
+      left: calc(50% - 13px);
+    }
+
+    &:nth-child(2) {
+      top: calc(50% - 13px);
+      right: -13px;
+    }
+
+    &:nth-child(3) {
+      bottom: -13px;
+      left: calc(30% - 13px);
+    }
+
+    &:nth-child(4) {
+      bottom: calc(50% - 13px);
+      left: -13px;
+    }
+  }
+
+  .arrow {
+    position: absolute;
+    top: -172px;
+    left: -11px;
+  }
+}
+
+.buttonContainer {
+  position: absolute;
+  right: -260px;
+  bottom: 70px;
+
+  button {
+    position: relative;
+    left: 58px;
+    top: -8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    width: 346px;
+    border-radius: 4px;
+    background-color: $orange;
+    color: #fff;
+    border: 0;
+    outline: 0;
+    font-size: 20px;
+    cursor: pointer;
+  }
+}
