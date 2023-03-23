@@ -8,9 +8,9 @@ export function Nav() {
         <a href='#'>Marlamarlamarla</a>
       </div>
       <div className={styles.right}>
-        <a href='#'>I didn't</a>
-        <a href='#'>mean to</a>
-        <a href='#'>hurt you :(</a>
+        <a href='#'>Work Layers</a>
+        <a href='#'>About Assets</a>
+        <a href='#'>Contact Page</a>
       </div>
     </div>
   )

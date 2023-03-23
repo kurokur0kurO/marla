@@ -1,28 +1,20 @@
-@import "../../variables";
+@import '../../variables';
 
-$offset-left: 200px;
+$offset-left: 300px;
 
 $border1: 16px;
 $border2: 26px;
 
 .container {
   position: relative;
-  margin-top: 110px;
+  margin: 230px 0;
   margin-left: $offset-left;
-}
-
-.dash {
-  position: absolute;
-  left: -$offset-left;
-  top: 50%;
-  width: 100vw;
-  border-top: 1px dashed $blue;
 }
 
 .outer {
   position: relative;
-  width: 901px;
-  padding: 70px;
+  width: 1207px;
+  padding: 70px 112px;
   border-radius: 8px;
   box-sizing: border-box;
   background-color: $gray900;
@@ -45,28 +37,28 @@ $border2: 26px;
 
   .diamond {
     position: absolute;
-    top: -30px;
+    top: -50px;
     left: 0;
   }
 }
 
 .box {
   position: relative;
-  padding: 95px 50px 70px;
-  border: 2px solid #505050;
+  padding: 67px 114px 110px;
+  border: 2px solid $blue;
 
   .header {
-    font-weight: 700;
-    font-size: 96px;
-    line-height: 125%;
-    color: $gray200;
+    font-size: 88px;
+    line-height: 110px;
+    color: $gray100;
   }
 
   .message {
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 24px;
+    margin-top: 28px;
+    font-size: 32px;
+    line-height: 40px;
     color: $gray100;
+    font-family: $space-grotesk-font;
   }
 
   .corners {
@@ -75,7 +67,7 @@ $border2: 26px;
     height: 24px;
     box-sizing: border-box;
     border: 2px solid $blue;
-    background-color: $gray900;
+    background-color: $gray100;
 
     &:nth-child(1) {
       top: -13px;
@@ -116,39 +108,24 @@ $border2: 26px;
       top: -13px;
       left: calc(50% - 13px);
     }
-
-    &:nth-child(2) {
-      top: calc(50% - 13px);
-      right: -13px;
-    }
-
-    &:nth-child(3) {
-      bottom: -13px;
-      left: calc(30% - 13px);
-    }
-
-    &:nth-child(4) {
-      bottom: calc(50% - 13px);
-      left: -13px;
-    }
   }
 
   .arrow {
     position: absolute;
-    top: -172px;
-    left: -11px;
+    top: -311px;
+    left: -31px;
   }
 }
 
 .buttonContainer {
   position: absolute;
-  right: -260px;
-  bottom: 70px;
+  right: -43px;
+  bottom: -5px;
 
   button {
     position: relative;
-    left: 58px;
-    top: -8px;
+    left: 75px;
+    top: 11px;
     display: flex;
     justify-content: center;
     align-items: center;

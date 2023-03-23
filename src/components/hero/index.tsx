@@ -1,25 +1,18 @@
-import React from 'react'
 import arrowSvg from '../../assets/arrow.svg'
 import diamondSvg from '../../assets/diamond.svg'
 import cursorSvg from '../../assets/cursor.svg'
 import styles from './styles.module.scss'
 
 export function Hero() {
-  const [btnText, setBtnText] = React.useState('I hope you forgive me')
-  const changeBtnText = () => {
-    setBtnText('ilysm :\'(')
-  }
-
   return (
     <div className={styles.container}>
-      <div className={styles.dash}></div>
       <div className={styles.outer}>
         <div className={styles.box}>
           <div className={styles.header}>
-            Hi, Marla.
+            Hi, I'm Marla.
           </div>
           <div className={styles.message}>
-            Napaka insensitive ko. Palagi kitang nasasaktan. I'm sorry.
+            I’m a Designer with a skills in in  UI/UX , Branding, Advertising and Copywriting. 
           </div>
           <div>
             <div className={styles.corners}></div>
@@ -38,8 +31,8 @@ export function Hero() {
         <img className={styles.diamond} src={diamondSvg} />
         <div className={styles.buttonContainer}>
           <img src={cursorSvg} />
-          <button onMouseEnter={changeBtnText}>
-            { btnText }
+          <button>
+            Let's Talk!
           </button>
         </div>
       </div>

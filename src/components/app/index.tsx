@@ -1,5 +1,6 @@
 import { Hero } from '../hero'
 import { Nav } from '../nav'
+import { Ui } from '../ui'
 import styles from './styles.module.scss'
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <div className={styles.app}>
       <Nav />
       <Hero />
+      <Ui />
     </div>
   )
 }
