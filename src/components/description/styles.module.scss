@@ -1,0 +1,39 @@
+@import '../../includes';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  width: 718px;
+  border: 1px solid $gray100;
+  border-radius: 12px;
+  color: $gray100;
+}
+
+.top {
+  padding: 20px 0px 20px 24px;
+  font-family: $space-grotesk-font;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 115%;
+}
+
+.bottom {
+  position: relative;
+  height: 48px;
+  box-sizing: border-box;
+  padding: 15px 24px;
+  border-top: 1px solid $gray100;
+
+  img {
+    margin-right: 12px;
+  }
+}
+
+.circles {
+  @include circles;
+
+  position: absolute;
+  top: 12px;
+  right: 24px;
+}

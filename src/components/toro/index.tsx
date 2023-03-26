@@ -4,7 +4,7 @@ import { About } from '../about'
 import { Description } from '../description'
 import styles from './styles.module.scss'
 
-export function Ui() {
+export function Toro() {
   return (
     <div className={styles.container}>
       <div className={styles.banner}>
@@ -12,8 +12,8 @@ export function Ui() {
         <img className={styles.secondImage} src={img2} />
       </div>
       <div className={styles.content}>
-        <About category='UI, UX' name='BSM Portfolio Dashboard' />
-        <Description text='A dashboard UI redesigning project a demo solution site.' />
+        <About category='Website Design, UI, UX, Branding, Iconography' name='Toro Cloud' />
+        <Description text='Various visual design requirements in 6+ years as in-house designer.' />
       </div>
     </div>
   )

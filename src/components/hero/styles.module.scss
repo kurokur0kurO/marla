@@ -1,4 +1,4 @@
-@import '../../variables';
+@import '../../includes';
 
 $offset-left: 300px;
 
@@ -91,23 +91,10 @@ $border2: 26px;
   }
 
   .circles {
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 24px;
-    height: 24px;
-    padding-bottom: 2px;
-    box-sizing: border-box;
-    border: 2px solid $blue;
-    background-color: $gray900;
-    border-radius: 50%;
-    color: $blue;
+    @include circles;
 
-    &:nth-child(1) {
-      top: -13px;
-      left: calc(50% - 13px);
-    }
+    top: -13px;
+    left: calc(50% - 13px);
   }
 
   .arrow {

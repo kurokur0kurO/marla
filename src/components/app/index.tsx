@@ -1,6 +1,10 @@
 import React from 'react'
+import { Branding } from '../branding'
 import { Hero } from '../hero'
+import { Investment } from '../investment'
 import { Nav } from '../nav'
+import { Software } from '../software'
+import { Toro } from '../toro'
 import { Ui } from '../ui'
 import styles from './styles.module.scss'
 
@@ -20,6 +24,10 @@ function App() {
       <Nav />
       <Hero />
       <Ui />
+      <Branding />
+      <Software />
+      <Investment />
+      <Toro />
     </div> :
     <div />
   )

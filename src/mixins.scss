@@ -1,0 +1,19 @@
+@mixin circles {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  box-sizing: border-box;
+  border: 2px solid $blue;
+  background-color: $gray900;
+  border-radius: 50%;
+  font-family: $space-grotesk-font;
+  font-weight: 500;
+  color: $blue;
+
+  &::after {
+    content: '+';
+  }
+}

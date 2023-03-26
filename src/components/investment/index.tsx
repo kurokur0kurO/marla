@@ -4,7 +4,7 @@ import { About } from '../about'
 import { Description } from '../description'
 import styles from './styles.module.scss'
 
-export function Ui() {
+export function Investment() {
   return (
     <div className={styles.container}>
       <div className={styles.banner}>
@@ -12,8 +12,8 @@ export function Ui() {
         <img className={styles.secondImage} src={img2} />
       </div>
       <div className={styles.content}>
-        <About category='UI, UX' name='BSM Portfolio Dashboard' />
-        <Description text='A dashboard UI redesigning project a demo solution site.' />
+        <About category='Logo, Website Design, Branding' name='Investment Platform' />
+        <Description text='Working on a Wireframe and corporate branding not provided, UI designs are suggested.' />
       </div>
     </div>
   )

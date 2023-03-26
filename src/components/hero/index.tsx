@@ -20,12 +20,7 @@ export function Hero() {
             <div className={styles.corners}></div>
             <div className={styles.corners}></div>
           </div>
-          <div>
-            <div className={styles.circles}>+</div>
-            <div className={styles.circles}>+</div>
-            <div className={styles.circles}>+</div>
-            <div className={styles.circles}>+</div>
-          </div>
+          <div className={styles.circles} />
           <img className={styles.arrow} src={arrowSvg} />
         </div>
         <img className={styles.diamond} src={diamondSvg} />
