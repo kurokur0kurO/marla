@@ -2,9 +2,6 @@
 
 $offset-left: 300px;
 
-$border1: 16px;
-$border2: 26px;
-
 .container {
   position: relative;
   margin: 230px 0;
@@ -19,21 +16,7 @@ $border2: 26px;
   box-sizing: border-box;
   background-color: $gray900;
 
-  // border
-  background-image: repeating-linear-gradient(
-      0deg,
-      $purple,
-      $purple $border1,
-      transparent $border1,
-      transparent $border2,
-      $purple $border2
-    ),
-    repeating-linear-gradient(90deg, $purple, $purple $border1, transparent $border1, transparent $border2, $purple $border2),
-    repeating-linear-gradient(180deg, $purple, $purple $border1, transparent $border1, transparent $border2, $purple $border2),
-    repeating-linear-gradient(270deg, $purple, $purple $border1, transparent $border1, transparent $border2, $purple $border2);
-  background-size: 2px 100%, 100% 2px, 2px 100%, 100% 2px;
-  background-position: 0 0, 0 0, 100% 0, 0 100%;
-  background-repeat: no-repeat;
+  @include long-dash;
 
   .diamond {
     position: absolute;
